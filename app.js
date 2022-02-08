@@ -11,11 +11,13 @@ const app = express();
 app.use(express.json());
 //app.use('/', (req, res) => res.send('Hello World SGWebFreelancer'));
 
+
 // home route
 app.get("/", (req, res) =>
 { 
     res.send("<h1>Welcome to Novice Movie-API</h1>"); 
 });
+
 
 // GET /movies - Get all movies
 app.get("/movies", (req, res) => {
@@ -25,7 +27,7 @@ app.get("/movies", (req, res) => {
 // GET /movies/:id - one movie identified by id
 app.get("/movies/:id", (req,res) => {
   const movieId = req.params.id;
-  const movie = data.find(_movie => _movie.id === movieId);
+  const movie = data.find(aMovie => aMovie.id === movieId);
 
   if(movie){
     res.json(movie)
@@ -45,6 +47,53 @@ app.post("/movies", (req, res) => {
   // return update
   res.json(data);
 })
+
+
+// PUT /movies/:id - update movie
+app.put("/movies/:id", (req,res) => {
+  const movieId = req.params.id;
+  const movie = req.body;
+  console.log("Editing movie: ", movieId, " to be ", movie);
+
+  const updatedMovieList = [];
+  // loop through list to find & replace a movie
+  data.forEach(oldMovie => {
+    if(oldMovie.id === movieId){
+      updatedMovieList.push(movie);
+    }else{
+      updatedMovieList.push(oldMovie);
+    }
+  });
+
+  // replace old list to new list
+  data = updatedMovieList;
+
+  // return updated data
+  res.json(data);
+
+});
+
+
+// DELETE /movies/:id - delete movie
+app.delete("/movies/:id", (req,res) => {
+  const movieId = req.params.id;
+
+  console.log("Delete movie with id: ", movieId);
+
+  // Using filter function to exclude movie to delete
+  const filteredMovie = data.filter(movie => movie.id !== movieId);
+
+  // replace old movie with new one
+  data = filteredMovie;
+
+  res.json(data);
+
+
+});
+
+
+
+
 
 
 
