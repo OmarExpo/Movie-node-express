@@ -2,7 +2,7 @@
 
 # Rest API with Node and Express
 
-Here is Movie API Structure: <img src= "https://github.com/OmarExpo/Movie-node-express/blob/main/Movie.PNG">
+<img src= "https://github.com/OmarExpo/Movie-node-express/blob/main/Movie.PNG"=250*250>
 
 In this simple project, I have build a restful API with 'node.js' and 'express.js' web framework for CRUD (Create, Read, Update and Delete) operations.
 
