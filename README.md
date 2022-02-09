@@ -17,7 +17,7 @@ It is actually a simple Movie-API where all the movies are stored in an array. N
 
 Covered concepts:
 
-_ <bold>Node</bold> and Express to build a web server and REST API
+_ <strong>Node</strong> and Express to build a web server and REST API
 
 _ Understanding routing, request and response
 
