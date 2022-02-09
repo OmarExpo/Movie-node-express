@@ -2,7 +2,7 @@
 
 # Rest API with Node and Express
 
-<img src="https://github.com/OmarExpo/Movie-node-express/blob/main/RestAPI.PNG" width="200px">
+<img src="https://github.com/OmarExpo/Movie-node-express/blob/main/RestAPI.PNG" width="300px">
 <br>
 
 My Movie RestAPI structure illustration:
