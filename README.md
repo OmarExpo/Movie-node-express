@@ -23,4 +23,4 @@ _ Understanding routing, request and response
 
 _ Implementing CRUD with HTTP methods <strong>(GET / POST / PUT / UPDATE)<strong/>
 
-_ Building a server-rendered
+_ Building a server-rendered app
