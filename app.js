@@ -2,7 +2,7 @@
 const express = require('express');
 let data = require("./data");
 
-const port = 3000;
+const port = 8080;
 
 // initializing express
 const app = express();
@@ -98,4 +98,5 @@ app.delete("/movies/:id", (req,res) => {
 
 
 const server = app.listen(port, () => console.log('Server is up and running at port: ' + port));
+
 
