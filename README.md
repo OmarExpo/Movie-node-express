@@ -17,10 +17,10 @@ It is actually a simple Movie-API where all the movies are stored in an array. N
 
 Covered concepts:
 
-_ Node and Express to build a web server and REST API
+_ <bold>Node</bold> and Express to build a web server and REST API
 
 _ Understanding routing, request and response
 
-_ Implementing CRUD with HTTP methods (GET / POST / PUT / UPDATE)
+_ Implementing CRUD with HTTP methods <strong>(GET / POST / PUT / UPDATE)<strong/>
 
 _ Building a server-rendered
